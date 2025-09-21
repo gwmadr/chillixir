@@ -1,0 +1,184 @@
+
+CSS
+
+/* ====== CSS VARIABLES ====== */
+/* Define your color palette and fonts here. Change these values to rebrand instantly! */
+:root {
+    /* Colors */
+    --color-primary: #6a4a8c;    /* Main purple */
+    --color-primary-dark: #51366d; /* Darker purple (for hovers) */
+    --color-background: #f5f1e6;  /* Cream background */
+    --color-text: #333;           /* Main text color (dark gray) */
+    --color-text-light: #f5f1e6;  /* Light text for dark backgrounds */
+    --color-accent: #9f6ba0;      /* Lighter purple accent */
+
+    /* Fonts */
+    --font-heading: 'Georgia', serif;
+    --font-body: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* ====== GLOBAL STYLES ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+
+/* ====== TYPOGRAPHY ====== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ====== LAYOUT & CONTAINERS ====== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* ====== HEADER & NAVIGATION ====== */
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent);
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--color-background);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* ====== BUTTONS ====== */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-3px);
+}
+
+/* ====== SECTION STYLES ====== */
+section {
+    padding: 5rem 0;
+}
+
+/* ====== PROJECTS/ITEMS GRID ====== */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+/* ====== CONTACT FORM ====== */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-body);
+}
+
+.form-group textarea {
+    min-height: 150px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
