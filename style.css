@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spray | Chillixir by Gwen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>      
+        <div class="language-switcher">
+    <a href="spray-en.html">🌐EN</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="spray.html">Spray</a></li>
+                <li><a href="cream.html">Crema</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Spray Relajante</h1>
+            <p>Alivia la tensión muscular y prepara tu mente para un sueño profundo con nuestro spray de absorción rápida, formulado con magnesio puro y lavanda natural.</p>
+
+            <!-- PROJECT 1 -->
+            <div class="item" id="spray.html">
+                <!-- CHANGE IMAGE, TITLE, DESCRIPTION -->
+             <!--   <img src="assets/project1-large.jpg" alt="Full view of Project One" style="width: 100%; margin-bottom: 1rem;"> -->
+                <h2>¿Qué es el Spray de Magnesio y Lavanda?</h2>
+                <p>Un spray relajante de absorción rápida formulado con magnesio puro y aceite esencial de lavanda 100% natural. Diseñado para aliviar la tensión muscular y preparar tu cuerpo y mente para un sueño profundo, en cualquier momento y lugar</p>
+
+                
+<!-- Key Benefits List -->
+<h3>¿Por qué amarlo?</h3>
+<ul>
+    <li>Alivia dolores musculares y calambres al instante.</li>
+    <li>Reduce la ansiedad y el estrés con el aroma de lavanda.</li>
+    <li>Mejora la calidad del sueño cuando se usa antes de dormir.</li>
+    <li>Fórmula natural, sin químicos agresivos.</li>
+    <li>Envase de vidrio ámbar que protege los ingredientes.</li>
+</ul>
+
+<!-- How to Use -->
+<h3>¿Cómo se usa?</h3>
+<p>Rocía de 4 a 6 veces en las áreas tensionadas (hombros, cuello, espalda baja) o en pulsos como muñecas y tobillos para relax general. ¡Úsalo diariamente!</p>
+
+<!-- Ingredients -->
+<h3>Ingredientes puros:</h3>
+<p>Agua destilada, cloruro de magnesio, aceite esencial de lavanda, hamamelis (conservante natural).</p>
+
+                
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
+
+            <hr style="margin: 3rem 0;">
+
+            <!-- PROJECT 2 
+            <div class="item" id="project2">
+                <img src="assets/project2-large.jpg" alt="Full view of Project Two" style="width: 100%; margin-bottom: 1rem;">
+                <h2>Project Two Title</h2>
+                <p>A comprehensive description of your second project.</p>
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
+
+            <!-- Add more projects as needed -->
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Chillixir by Gwen. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
