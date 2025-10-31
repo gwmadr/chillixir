@@ -36,7 +36,10 @@
                 <h2>¿Qué es el Spray de Magnesio y Lavanda?</h2>
                 <p>Un spray relajante de absorción rápida formulado con magnesio puro y aceite esencial de lavanda 100% natural. Diseñado para aliviar la tensión muscular y preparar tu cuerpo y mente para un sueño profundo, en cualquier momento y lugar</p>
 
-                
+h3 {
+    margin-top: 2rem; /* adds space above EVERY h3 */
+}
+
 <!-- Key Benefits List -->
 <h3>¿Por qué amarlo?</h3>
 <ul>
@@ -71,6 +74,43 @@
 
             <!-- Add more projects as needed -->
 
+/* ====== PROJECTS/ITEMS GRID ====== */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center; /* This will center the image, title, and button */
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    max-width: 250px; /* Keeps images from being huge */
+    height: 250px; /* Creates a uniform square for all product images */
+    object-fit: cover; /* This crops the image to fit the square nicely */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.item-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin: 0.5rem 0;
+}
+
         </section>
     </main>
 
@@ -82,3 +122,4 @@
 </body>
 
 </html>
+
