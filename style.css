@@ -10,6 +10,7 @@
     --font-body: 'Helvetica', 'Arial', sans-serif;
 }
 
+/* ====== GLOBAL STYLES ====== */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +24,100 @@ body {
     line-height: 1.6;
 }
 
-/* ... ALL YOUR OTHER CSS RULES ... */
+/* ====== FIX HEADER OVERLAP ====== */
+main {
+    margin-top: 80px;
+}
+
+/* ====== LANGUAGE SWITCHER ====== */
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-weight: bold;
+}
+
+.language-switcher a:hover {
+    color: var(--color-accent);
+}
+
+/* ====== TYPOGRAPHY ====== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+/* ====== LAYOUT & CONTAINERS ====== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* ====== HEADER & NAVIGATION ====== */
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent);
+}
+
+/* ====== BUTTONS ====== */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-3px);
+}
 
 /* ====== PROJECTS/ITEMS GRID ====== */
 .items-grid {
@@ -60,4 +154,29 @@ body {
     font-weight: bold;
     color: var(--color-primary);
     margin: 0.5rem 0;
+}
+
+/* ====== MOBILE RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+    .language-switcher {
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+    }
+
+    nav ul li {
+        margin: 0 0.8rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 1rem 0;
+    }
 }
